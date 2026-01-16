@@ -1,0 +1,4 @@
+boto3
+duckdb
+dbt-core
+dbt-duckdb

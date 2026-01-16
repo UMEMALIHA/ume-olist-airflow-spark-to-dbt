@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: olist_curated
+    tables:
+      - name: customers
+      - name: orders
+      - name: order_items
+      - name: order_reviews

@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.env
+.venv/
+venv/
+
+# Local data (do not commit)
+data/raw/
+data/curated/
+
+# dbt artifacts (do not commit)
+dbt/**/target/
+dbt/**/dbt_packages/
+dbt/**/logs/
+
+# DuckDB local database file
+dbt/**/.duckdb
+*.duckdb
+
+# OS / Editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
