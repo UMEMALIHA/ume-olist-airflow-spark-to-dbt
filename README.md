@@ -5,13 +5,13 @@ This project demonstrates a modern ELT pipeline design where transformation logi
 
 The implementation uses the Brazilian Olist e-commerce dataset (4 CSV files) stored in Amazon S3. The pipeline produces a curated Parquet layer and then builds analytics-ready tables using dbt, including data quality tests.
 
-## Architecture (High Level)
-1. Orchestration (Target): Apache Airflow (EC2) triggers the pipeline steps  
-2. Transformation (Target): Apache Spark converts raw CSV → curated Parquet  
+## Architecture 
+1. Orchestration : Apache Airflow (EC2) triggers the pipeline steps  
+2. Transformation : Apache Spark converts raw CSV → curated Parquet  
 3. Analytics Layer: dbt Core builds models (staging + marts) and runs tests  
 4. Storage: Amazon S3 holds raw and curated layers
 
-### POC Execution Note
+## Execution Note
 DuckDB is used as a lightweight local transformation engine to convert CSV → Parquet quickly. The curated Parquet layer and dbt logic remain Spark-compatible.
 
 ## Dataset
